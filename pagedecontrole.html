@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAGE DE CONTROLE</title>
+  <!-- liaison avec la page code css-->
+  <link rel="stylesheet" href="pagedecontrole.css">
+</head>
+<body>
+  <!-- création de la division contenant le programme -->
+
+  <div class="principal">
+    <header>
+  <!-- insertion des image d'entete -->
+
+      <img src="image/insam.jpeg" alt="logo universite" class="insam">
+      <img src="image/Smart-Home-1.jpg" alt="maision" class="maison">
+      <img src="image/dshang.jpg" alt="logo universite" class="dshang">
+      <p class="house">
+        <strong>SMART HOUSE</strong>
+      </p>
+    </header>
+  <!-- création des liens vers la page principal et vers la description de l'auteur-->
+
+    <nav>
+      <a href="pagedecouverture.html"><strong>HOME</strong></a>
+      <a href="#" onclick="presentation();"><strong>AUTEUR</strong></a>
+      
+    </nav>
+  <!-- contenu principal -->
+    <main>
+
+      <h1>Sélectionner l'action à effectuer</h1>
+      <div class="block"><p><strong>CONTROLE PORTE</strong></p>
+      <br>
+      <img src="image/door-gb73d1ead9_1280.png" alt="porte" class="porte">
+      <button class="pon"><a href="http://127.20.10.2:800/pon" target="_blank">ON</a></button>
+      <button class="poff"><a href="http://127.20.10.2:800/poff" target="_blank">OFF</a></button>
+    </div>
+    <div class="block" ><p><Strong>GESTION ETAT LAMPE</Strong></p>
+      <br>
+      <img src="image/AMPOULE.webp" alt="lampe" class="lampe">
+      <button class="lon"><a href="http://127.20.10.2:800/lon" target="_blank">ON</a></button>
+      <button class="loff"><a href="http://127.20.10.2:800/loff" target="_blank">OFF</a></button>
+    </div>
+    <div class="block">
+    <p><strong>CONTROLE VENTILATEUR</strong></p>
+    <br>
+      <img src="image/air-conditioning-g5c697cda6_1280.png" alt="clim" class="clim">
+      <button class="con"><a href="http://127.20.10.2:800/con" target="_blank">ON</a></button>
+      <button class="coff"><a href="http://127.20.10.2:800/coff" target="_blank">OFF</a></button>
+    </div>
+    </main>
+    <footer>
+      <h2> MEMOIRE</h2>
+    </footer>
+  </div>
+ <script>
+  function presentation(){
+    alert("Eleve en Master 2 AII, cette page à été réaliser pour la présentation de mon mémoire intilulé: SMART HOUSE");
+  }
+ </script>
+  
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page de couverture</title>
+  <link rel="stylesheet" href="pagedecouverture.css">
+</head>
+<body>
+  <div class="js-div">
+     <h1>BIENVENU SUR LA MAISON INTELLIGENTE CMR</h1>
+  <P>
+    <strong>
+      VEILLEZ ENTRER LE CODE D'ACCESS
+    </strong>
+  </P>
+  <input type="password" placeholder="mots de passe" class="js-motdepasse id">
+<button onclick="verification();
+">entrer</button>
+<br>
+<br>
+  <a href="pagedecontrole.html" id="js-a" color="black">Aller à la page de controle</a>
+  </div>
+  <script>
+    let d= document.getElementById("js-a");
+    d.style.display ="none";
+    function verification(){
+      let code = document.querySelector('.js-motdepasse').value;
+    if(code == 12348) {
+      d.style.display ="block";
+    }
+    else{
+      alert("mots de passe incorect");
+    }
+    }
+  </script>
+</body>
+
+</html>
